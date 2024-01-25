@@ -9,7 +9,7 @@ export default function Footer() {
       <Box maxWidth="6xl" marginX="auto" paddingX="6">
         <Box>
           <Heading marginBottom="6" size="lg">
-            Segun Adebayo
+            Areo Benjamen
           </Heading>
           <Text fontSize="lg">
             Passionate UI engineer looking to bridge the gap between design and code

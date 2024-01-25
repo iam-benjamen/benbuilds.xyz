@@ -32,6 +32,7 @@ import {
 } from 'lib/contentlayer-utils';
 import sortByPublishedDate from 'lib/sort';
 import tools from 'lib/tools';
+import { BrandJsonLd } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import siteConfig from 'site.config';
@@ -67,18 +68,17 @@ function MainHeading(props: HeadingProps) {
 export default function HomePage() {
   return (
     <Container>
-      {/* Segun Adebayo - ui engineer & product designer  */}
       <Flex direction="column" paddingY="24">
-        <MainHeading>Segun Adebayo</MainHeading>
+        <MainHeading>Areo Benjamen O.</MainHeading>
         <Text
           color="brown.600"
           display="block"
-          fontSize="5xl"
+          fontSize="5rem"
           fontFamily="heading"
           fontWeight="bold"
           lineHeight="1.2"
         >
-          UI engineer &amp; product designer
+          Product-Oriented Software Engineer
         </Text>
 
         {/* I'm passionate about... */}
@@ -95,12 +95,12 @@ export default function HomePage() {
         </Text>
 
         {/* Github star and Chakra brag */}
-        <Box marginTop={{ base: '8', md: '14' }} width="full">
+        {/* <Box marginTop={{ base: '8', md: '14' }} width="full">
           <Flex direction={{ base: 'column', md: 'row' }} gap={{ base: '5', md: '10' }}>
             <AchievementItem icon={GithubStarIcon}>Github Star</AchievementItem>
             <AchievementItem icon={ChakraLogo}>Creator, Chakra UI</AchievementItem>
           </Flex>
-        </Box>
+        </Box> */}
       </Flex>
 
       {/* I design component systems... */}
@@ -121,8 +121,8 @@ export default function HomePage() {
             overflow="hidden"
           >
             <Image
-              alt="Segun adebayo"
-              src="/static/images/segun-adebayo-headshot.jpg"
+              alt="Areo Benjamen"
+              src="/static/images/areo-benjamen-headshot.jpg"
               fill
               style={{ objectFit: 'cover' }}
             />
@@ -133,9 +133,9 @@ export default function HomePage() {
             fontSize={{ base: '3rem', md: '5rem', lg: '6.25rem' }}
             letterSpacing="tight"
           >
-            I design{' '}
+            I build innovative{' '}
             <Box as="span" color="brown.600">
-              component systems
+              software solutions
             </Box>
           </Heading>
         </Box>

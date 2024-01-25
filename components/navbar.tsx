@@ -51,7 +51,7 @@ function NavItem(props: NavItemProps) {
       _hover={{ color: 'brown.600' }}
       _activeLink={{ bg: 'gray.800', shadow: 'highlight' }}
     >
-      <Icon as={data.icon} color="brown.600" fontSize="lg" />
+      <Icon as={data.icon} color="white" fontSize="lg" />
       <Text fontFamily="heading">{children}</Text>
     </HStack>
   );
@@ -110,13 +110,13 @@ function MobileNavItemGroup(props: StackProps) {
 
 function Headshot() {
   return (
-    <Circle size="10" rounded="full" borderWidth="2px" borderColor="brown.600">
+    <Circle size="10" rounded="full" borderWidth="2px" borderColor="white">
       <Circle rounded="full" overflow="hidden" size="8">
         <VisuallyHidden>Home</VisuallyHidden>
         <Image
           priority
-          alt="Segun Adebayo"
-          src="/static/images/segun-adebayo-headshot.jpg"
+          alt="Areo Benjamen"
+          src="/static/images/areo-benjamen-headshot.jpg"
           width={32}
           height={32}
           style={{ objectFit: 'cover' }}
