@@ -1,18 +1,15 @@
 const tools = [
-  'React',
-  'TypeScript',
+  'Javascript & TypeScript',
+  'Java',
+  'Python',
+  'React.js',
   'Next.js',
-  'Figma',
-  'Storybook',
-  'XState',
   'Node.js',
-  'Redux Toolkit',
-  'MobX',
-  'Sketch',
-  'Invision',
-  'Zeplin',
-  'Prisma',
-  'GraphQL',
+  'AWS',
+  'Linux',
+  'Mongo DB',
+  'PostgreSQL','Firebase',
+  'React Query',
 ];
 
 export default tools;

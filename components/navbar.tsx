@@ -65,12 +65,11 @@ interface NavItemData {
 }
 
 const items: NavItemData[] = [
-  { label: 'Talks', href: '/talks', icon: TalksIcon },
-  { label: 'Blog', href: '/blog', icon: BlogIcon },
+  { label: 'Blog', href: 'https://benjie.hashnode.dev', icon: BlogIcon, primary: true },
   { label: 'Projects', href: '/projects', icon: ProjectIcon },
-  { label: 'Snippets', href: '/snippets', icon: SnippetIcon },
+  { label: 'Resume', href: '/snippets', icon: SnippetIcon },
   {
-    label: 'Coaching',
+    label: "Schedule meet",
     href: 'https://calendly.com/chakra-ui/technical-consulting-60m',
     icon: CoachingIcon,
     primary: true,
@@ -116,9 +115,9 @@ function Headshot() {
         <Image
           priority
           alt="Areo Benjamen"
-          src="/static/images/areo-benjamen-headshot.jpg"
-          width={32}
-          height={32}
+          src="/static/images/headshot-min1.jpg"
+          width={36}
+          height={36}
           style={{ objectFit: 'cover' }}
         />
       </Circle>

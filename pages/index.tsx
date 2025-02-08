@@ -9,32 +9,17 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  VisuallyHidden,
   Wrap,
   WrapItem,
 } from '@chakra-ui/react';
-import ChakraLogo from 'components/chakra-logo';
 import Container from 'components/container';
-import Emoji from 'components/emoji';
-import GithubStarIcon from 'components/github-star';
 import LinkItem from 'components/link-item';
 import ProjectCard from 'components/project-card';
-import { EmailIcon, FileIcon, LinkedInIcon, TwitterIcon } from 'components/social-icons';
-import SubscribeForm from 'components/subscribe-form';
-import TalkCard from 'components/talk-card';
-import TestimonialCard from 'components/testimonial-card';
-import ViewMore from 'components/view-more';
-import chunk from 'lib/chunk';
-import {
-  allFeaturedProjects,
-  allFeaturedTalks,
-  allFeaturedTestimonials,
-} from 'lib/contentlayer-utils';
-import sortByPublishedDate from 'lib/sort';
+import { EmailIcon, FileIcon, LinkedInIcon, TwitterIcon, GithubIcon } from 'components/social-icons';
+
+import { allFeaturedProjects } from 'lib/contentlayer-utils';
 import tools from 'lib/tools';
-import { BrandJsonLd } from 'next-seo';
 import Image from 'next/image';
-import Link from 'next/link';
 import siteConfig from 'site.config';
 
 function AchievementItem({ icon, children }) {
@@ -69,85 +54,79 @@ export default function HomePage() {
   return (
     <Container>
       <Flex direction="column" paddingY="24">
-        <MainHeading>Areo Benjamen O.</MainHeading>
+        <MainHeading>Areo Benjamen</MainHeading>
         <Text
           color="brown.600"
           display="block"
-          fontSize="5rem"
+          fontSize="4rem"
           fontFamily="heading"
           fontWeight="bold"
           lineHeight="1.2"
         >
-          Product-Oriented Software Engineer
+          Product-Oriented <br /> Software Engineer.
         </Text>
 
         {/* I'm passionate about... */}
         <Text
           marginTop="14"
           fontFamily="body"
-          maxWidth="40rem"
+          maxWidth="45rem"
           fontSize={{ base: 'lg', md: '2xl' }}
         >
-          I'm passionate about <Emoji label="design system">🎨</Emoji> design systems,{' '}
-          <Emoji label="accessibility">♿️</Emoji> accessibility,{' '}
-          <Emoji label="state machine">⚙️</Emoji> state machines, and{' '}
-          <Emoji label="love">😍 </Emoji> user experience
+          I'm passionate about 🚀 Startups, 🖥️ Product development, 🔢 Data Structures & Algorithms,
+          ☁️ Cloud & DevOps Engineering, 🎨 User Experience, and 📈Driving Growth.
         </Text>
-
-        {/* Github star and Chakra brag */}
-        {/* <Box marginTop={{ base: '8', md: '14' }} width="full">
-          <Flex direction={{ base: 'column', md: 'row' }} gap={{ base: '5', md: '10' }}>
-            <AchievementItem icon={GithubStarIcon}>Github Star</AchievementItem>
-            <AchievementItem icon={ChakraLogo}>Creator, Chakra UI</AchievementItem>
-          </Flex>
-        </Box> */}
       </Flex>
 
       {/* I design component systems... */}
       <Flex
-        paddingY="vGutter"
+        direction={{ base: 'column', lg: 'row' }}
         gap={{ base: '5', lg: '20' }}
         justify="space-between"
-        direction={{ base: 'column', lg: 'row' }}
+        paddingY="vGutter"
       >
         <Box maxWidth={{ lg: '36rem' }}>
           {/* Circular Headshot */}
           <Circle
             display={{ base: 'none', lg: 'flex' }}
             position={'relative'}
-            size="6.25rem"
-            float="left"
-            marginRight="6"
-            overflow="hidden"
+            overflow={'hidden'}
+            size={'6.25rem'}
+            marginRight={'6'}
+            float={'left'}
           >
             <Image
-              alt="Areo Benjamen"
-              src="/static/images/areo-benjamen-headshot.jpg"
-              fill
+              src="/static/images/headshot-min1.jpg"
               style={{ objectFit: 'cover' }}
+              alt="Areo Benjamen"
+              fill
             />
           </Circle>
 
           <Heading
-            lineHeight="1"
             fontSize={{ base: '3rem', md: '5rem', lg: '6.25rem' }}
+            lineHeight="1"
             letterSpacing="tight"
           >
-            I build innovative{' '}
+            I imagine & build{' '}
             <Box as="span" color="brown.600">
-              software solutions
+              innovative solutions
             </Box>
           </Heading>
         </Box>
 
         <Box maxWidth={{ lg: '27.5rem' }} marginTop="4">
           <Text fontSize={{ base: 'lg', md: '2xl' }}>
-            An engineer with a strong design background, specializing in design systems,
-            accessibility and interface design for digital products
+            Combining my technical skills with a strategic mindset. I excel at developing scalable
+            solutions, optimizing performance, and ensuring seamless deployments for high-impact
+            products.
           </Text>
 
           {/* Profile links */}
           <SimpleGrid columns={2} marginTop="10" spacing="10" maxWidth="16rem">
+            <LinkItem href={siteConfig.profiles.github} icon={GithubIcon}>
+              GitHub
+            </LinkItem>
             <LinkItem icon={LinkedInIcon} href={siteConfig.profiles.linkedin}>
               LinkedIn
             </LinkItem>
@@ -157,15 +136,41 @@ export default function HomePage() {
             <LinkItem icon={EmailIcon} href={siteConfig.profiles.email}>
               Email
             </LinkItem>
-            <LinkItem icon={FileIcon} href={siteConfig.profiles.linkedin}>
-              Resume
-            </LinkItem>
           </SimpleGrid>
         </Box>
       </Flex>
 
+      {/* Tools & Softwares */}
+      <Box as="section" py="vGutter">
+        <Box marginBottom="16">
+          <Heading size="3xl" letterSpacing="tight">
+            Tools &amp; Technologies
+          </Heading>
+          <Text marginTop="5" fontSize="lg" maxWidth={{ md: '45rem' }}>
+            Over the years, I had the opportunity to work with various software, tools and
+            frameworks. Here are some of them:
+          </Text>
+        </Box>
+
+        {/* ToolList */}
+        <Wrap spacing="10">
+          {tools.map((tool) => (
+            <WrapItem
+              cursor={'pointer'}
+              _hover={{ borderBottom: '2px solid white' }}
+              fontFamily="heading"
+              fontSize="4xl"
+              color="brown.600"
+              key={tool}
+            >
+              {tool}
+            </WrapItem>
+          ))}
+        </Wrap>
+      </Box>
+
       {/* Testimonials */}
-      <Box as="section" aria-labelledby="heading" py="vGutter">
+      {/* <Box as="section" aria-labelledby="heading" py="vGutter">
         <VisuallyHidden>Recommendations</VisuallyHidden>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing="6">
           {chunk(allFeaturedTestimonials, 2).map((testimonials, index) => (
@@ -176,7 +181,7 @@ export default function HomePage() {
             </Stack>
           ))}
         </SimpleGrid>
-      </Box>
+      </Box> */}
 
       {/* Featured projects */}
       <Box as="section" py="vGutter">
@@ -191,51 +196,6 @@ export default function HomePage() {
           </Stack>
         </Box>
       </Box>
-
-      {/* Featured Talks */}
-      <Box as="section" py="vGutter" position="relative">
-        <Heading size="3xl" letterSpacing="tight" position="relative">
-          Featured Talks
-        </Heading>
-        <Box marginTop="20" marginBottom="10">
-          <Flex direction="column" gap="20">
-            {allFeaturedTalks.sort(sortByPublishedDate).map((talk) => (
-              <TalkCard key={talk.title} data={talk} />
-            ))}
-          </Flex>
-        </Box>
-
-        <Link href="/talks">
-          <ViewMore as="div">View all Talks</ViewMore>
-        </Link>
-      </Box>
-
-      {/* Tools & Softwares */}
-      <Box as="section" py="vGutter">
-        <Box marginBottom="16">
-          <Heading size="3xl" letterSpacing="tight">
-            Tools &amp; Softwares
-          </Heading>
-          <Text marginTop="5" fontSize="lg" maxWidth={{ md: '45rem' }}>
-            Over the years, I had the opportunity to work with various software, tools and
-            frameworks. Here are some of them:
-          </Text>
-        </Box>
-
-        {/* ToolList */}
-        <Wrap spacing="10">
-          {tools.map((tool) => (
-            <WrapItem fontFamily="heading" fontSize="3xl" color="brown.600" key={tool}>
-              {tool}
-            </WrapItem>
-          ))}
-        </Wrap>
-      </Box>
-
-      {/* Subscribe callout */}
-      <Box as="hr" borderColor="whiteAlpha.300" />
-      <SubscribeForm />
-      <Box as="hr" borderColor="whiteAlpha.300" />
     </Container>
   );
 }

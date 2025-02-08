@@ -15,7 +15,7 @@ export default function ProjectCard(props: ProjectCardProps) {
   const Component = useMDXComponent(project.body.code);
 
   return (
-    <Flex gap="20" direction={{ base: 'column', md: 'row' }}>
+    <Flex gap="20" direction={{ base: 'column', md: 'row' }} alignItems={"center"}>
       <Box maxWidth={{ md: '27.5rem' }} flex="1">
         <Stack spacing="6">
           <Heading as="h3" color="brown.600" letterSpacing="tight">
@@ -39,10 +39,6 @@ export default function ProjectCard(props: ProjectCardProps) {
             <Component />
           </Box>
         </Stack>
-
-        <Box marginTop="12">
-          <DescriptionList data={project.metadata} />
-        </Box>
       </Box>
 
       <ProjectImageCard

@@ -20,14 +20,13 @@ export const tags = [
 ];
 
 const shared = {
-  name: 'Segun Adebayo',
+  name: 'Areo Benjamen',
   repo: 'https://github.com/segunadebayo/adebayosegun.com',
   editUrl: 'https://github.com/segunadebayo/adebayosegun.com/edit/main/data/',
   website: 'https://adebayosegun.com',
-  title:
-    'Segun Adebayo (aka Sage) - UI Engineer (Design Systems), Software Developer and Product Designer',
+  title: 'Areo Benjamen, Software Engineer and Product Strategist',
   description:
-    'UI Engineer passionate about design systems, state machines, accessibility, DX and Rust.',
+    'Software Engineer passionate about passionate about product development, User Experience, Driving Growth, and Market Dynamics',
   image: 'https://adebayosegun.com/static/images/banner.png',
 };
 
@@ -36,14 +35,14 @@ const siteConfig = {
   image: shared.image,
   type: 'website',
   title: shared.title,
-  titleTemplate: '%s - Segun Adebayo',
+  titleTemplate: '%s - Areo Benjamen O.',
   description: shared.description,
   siteUrl: shared.website,
   profiles: {
-    github: 'https://github.com/segunadebayo',
-    twitter: 'https://twitter.com/thesegunadebayo',
-    linkedin: 'https://linkedin.com/in/thesegunadebayo',
-    email: 'mailto:sage@adebayosegun.com',
+    github: 'https://github.com/iam-benjamen',
+    twitter: 'https://twitter.com/areobenjamen',
+    linkedin: 'https://linkedin.com/in/areo-benjamen',
+    email: 'mailto:areotimileyin1@gmail.com',
   },
   repo: {
     url: shared.repo,
@@ -66,7 +65,7 @@ const siteConfig = {
         url: 'https://adebayosegun.com/static/images/banner.png',
         width: 1200,
         height: 630,
-        alt: 'Segun Adebayo (aka Sage) - UI Engineer (Design Systems), Software Developer and Product Designer',
+        alt: 'Areo Benjamen, Software Engineer and Product Strategist',
       },
     ],
   },

@@ -1,0 +1,9 @@
+1. Project cleanup - remove all unused components and assets
+2. finish up navbar links - calendly, resume, blog
+3. fix projects
+4. try logos on tools and technologies
+5. banner
+6. hero passion updates content
+7. intro content - make more technical
+8. SEO cleanup
+9. Github
