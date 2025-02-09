@@ -50,6 +50,7 @@ function NavItem(props: NavItemProps) {
       aria-current={active ? 'page' : undefined}
       _hover={{ color: 'brown.600' }}
       _activeLink={{ bg: 'gray.800', shadow: 'highlight' }}
+      target={data.label === 'Resume' || data.label === 'Blog' ? '_blank' : '_self'}
     >
       <Icon as={data.icon} color="white" fontSize="lg" />
       <Text fontFamily="heading">{children}</Text>
@@ -65,12 +66,16 @@ interface NavItemData {
 }
 
 const items: NavItemData[] = [
-  { label: 'Blog', href: 'https://benjie.hashnode.dev', icon: BlogIcon, primary: true },
   { label: 'Projects', href: '/projects', icon: ProjectIcon },
-  { label: 'Resume', href: '/snippets', icon: SnippetIcon },
+  { label: 'Blog', href: 'https://benjie.hashnode.dev', icon: BlogIcon },
   {
-    label: "Schedule meet",
-    href: 'https://calendly.com/chakra-ui/technical-consulting-60m',
+    label: 'Resume',
+    href: 'https://drive.google.com/file/d/17CEtufc6G3iD-_G5UwQgZsxxWrXTgulc/view?usp=sharing',
+    icon: SnippetIcon,
+  },
+  {
+    label: 'Schedule meet',
+    href: 'https://calendly.com/areoxbenjamen/30min',
     icon: CoachingIcon,
     primary: true,
   },

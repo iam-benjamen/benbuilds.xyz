@@ -21,13 +21,13 @@ export const tags = [
 
 const shared = {
   name: 'Areo Benjamen',
-  repo: 'https://github.com/segunadebayo/adebayosegun.com',
-  editUrl: 'https://github.com/segunadebayo/adebayosegun.com/edit/main/data/',
-  website: 'https://adebayosegun.com',
+  repo: 'https://github.com/iam-benjamen/benbuilds.xyz',
+  editUrl: 'https://github.com/iam-benjamen/benbuilds.xyz/edit/main/data/',
+  website: 'https://benbuilds.xyz',
   title: 'Areo Benjamen, Software Engineer and Product Strategist',
   description:
-    'Software Engineer passionate about passionate about product development, User Experience, Driving Growth, and Market Dynamics',
-  image: 'https://adebayosegun.com/static/images/banner.png',
+    'Software Engineer passionate about 🚀 Startups, 🖥️ Product development, 🔢 Data Structures & Algorithms,☁️ Cloud & DevOps Engineering, 🎨 User Experience, and 📈Driving Growth.',
+  image: 'https://res.cloudinary.com/djskbsz2k/image/upload/v1739137579/Areo_Benjamen_zu7okz.png',
 };
 
 const siteConfig = {
@@ -42,15 +42,15 @@ const siteConfig = {
     github: 'https://github.com/iam-benjamen',
     twitter: 'https://twitter.com/areobenjamen',
     linkedin: 'https://linkedin.com/in/areo-benjamen',
-    email: 'mailto:areotimileyin1@gmail.com',
+    email: 'mailto:areoxbenjamen@gmail.com',
   },
   repo: {
     url: shared.repo,
     editUrl: shared.editUrl,
   },
   twitter: {
-    handle: '@thesegunadebayo',
-    site: '@thesegunadebayo',
+    handle: '@areobenjamen',
+    site: '@areobenjamen',
     cardType: 'summary_large_image',
   },
   openGraph: {
@@ -62,10 +62,10 @@ const siteConfig = {
     description: shared.description,
     images: [
       {
-        url: 'https://adebayosegun.com/static/images/banner.png',
+        url: 'https://res.cloudinary.com/djskbsz2k/image/upload/v1739137579/Areo_Benjamen_zu7okz.png',
         width: 1200,
         height: 630,
-        alt: 'Areo Benjamen, Software Engineer and Product Strategist',
+        alt: 'Areo Benjamen, Product-Oriented Software Engineer',
       },
     ],
   },

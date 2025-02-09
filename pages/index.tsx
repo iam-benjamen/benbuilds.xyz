@@ -4,8 +4,6 @@ import {
   Flex,
   Heading,
   HeadingProps,
-  HStack,
-  Icon,
   SimpleGrid,
   Stack,
   Text,
@@ -15,23 +13,12 @@ import {
 import Container from 'components/container';
 import LinkItem from 'components/link-item';
 import ProjectCard from 'components/project-card';
-import { EmailIcon, FileIcon, LinkedInIcon, TwitterIcon, GithubIcon } from 'components/social-icons';
+import { EmailIcon, LinkedInIcon, TwitterIcon, GithubIcon } from 'components/social-icons';
 
 import { allFeaturedProjects } from 'lib/contentlayer-utils';
 import tools from 'lib/tools';
 import Image from 'next/image';
 import siteConfig from 'site.config';
-
-function AchievementItem({ icon, children }) {
-  return (
-    <HStack spacing="3">
-      <Icon as={icon} fontSize="4xl" />
-      <Text fontFamily="heading" fontSize="xl">
-        {children}
-      </Text>
-    </HStack>
-  );
-}
 
 function MainHeading(props: HeadingProps) {
   return (
@@ -53,12 +40,12 @@ function MainHeading(props: HeadingProps) {
 export default function HomePage() {
   return (
     <Container>
-      <Flex direction="column" paddingY="24">
+      <Flex direction="column" height={'100vh'} justifyContent={'center'} paddingBottom={'5rem'}>
         <MainHeading>Areo Benjamen</MainHeading>
         <Text
           color="brown.600"
           display="block"
-          fontSize="4rem"
+          fontSize={{ base: '3.5rem', md: '4rem' }}
           fontFamily="heading"
           fontWeight="bold"
           lineHeight="1.2"
@@ -68,7 +55,7 @@ export default function HomePage() {
 
         {/* I'm passionate about... */}
         <Text
-          marginTop="14"
+          marginTop="12"
           fontFamily="body"
           maxWidth="45rem"
           fontSize={{ base: 'lg', md: '2xl' }}
