@@ -75,7 +75,7 @@ export default function HomePage() {
         <Box maxWidth={{ lg: '36rem' }}>
           {/* Circular Headshot */}
           <Circle
-            display={{ base: 'none', lg: 'flex' }}
+            // display={{ base: 'none', lg: 'flex' }}
             position={'relative'}
             overflow={'hidden'}
             size={'6.25rem'}
@@ -140,7 +140,7 @@ export default function HomePage() {
         </Box>
 
         {/* ToolList */}
-        <Wrap spacing="10">
+        <Wrap spacing={{ base: '5', md: '10' }}>
           {tools.map((tool) => (
             <WrapItem
               cursor={'pointer'}
@@ -173,7 +173,7 @@ export default function HomePage() {
       {/* Featured projects */}
       <Box as="section" py="vGutter">
         <Heading size="3xl" letterSpacing="tight">
-          Featured Projects
+          Projects I've worked on
         </Heading>
         <Box marginTop="vGutter">
           <Stack spacing="20">

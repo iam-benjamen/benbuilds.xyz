@@ -17,16 +17,13 @@ export default function ProjectPage() {
           </Heading>
           <Stack fontSize="lg" maxW="60ch" spacing="4">
             <Text>
-              My primary focus these days is{' '}
-              <MDXComponents.a href="https://chakra-ui.com/" target="_blank" rel="noopener">
-                Chakra UI{' '}
-              </MDXComponents.a>{' '}
-              — a component libary that provides the building blocks needed to create an accessible
-              app fast <Emoji label="fast">⚡️</Emoji>.
+              My primary focus these days is <strong> Next.js</strong> and <strong>Typescript</strong> — a powerful
+              stack for building fast, scalable, and maintainable web applications ⚡️.
             </Text>
             <Text>
-              I'm passionate about building <b>component systems</b> that help teams ship products
-              faster by bridging the gap between design and code.
+              I'm passionate about creating intuitive user interfaces while optimizing performance,
+              improving accessibility, and leveraging modern frontend tools to deliver seamless user
+              experiences.
             </Text>
             <Text>Here are some projects I've worked on that I think are worth mentioning.</Text>
           </Stack>
