@@ -17,8 +17,9 @@ export default function ProjectPage() {
           </Heading>
           <Stack fontSize="lg" maxW="60ch" spacing="4">
             <Text>
-              My primary focus these days is <strong> Next.js</strong> and <strong>Typescript</strong> — a powerful
-              stack for building fast, scalable, and maintainable web applications ⚡️.
+              My primary focus these days is building user interfaces with{' '}
+              <strong>React</strong> <strong> Next.js</strong> and <strong>Typescript</strong> — a
+              powerful stack for building fast, scalable, and maintainable web applications ⚡️.
             </Text>
             <Text>
               I'm passionate about creating intuitive user interfaces while optimizing performance,

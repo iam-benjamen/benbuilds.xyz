@@ -31,7 +31,8 @@ function MainHeading(props: HeadingProps) {
       lineHeight="1"
       userSelect="none"
       color="white"
-      marginBottom="4"
+      marginBottom="0"
+      position="relative"
       {...props}
     />
   );
@@ -50,13 +51,13 @@ export default function HomePage() {
           fontWeight="bold"
           lineHeight="1.2"
         >
-          Product-Oriented <br /> Software Engineer.
+          Software Developer
         </Text>
 
         {/* I'm passionate about... */}
-        <Text
+         <Text
           marginTop="12"
-          fontFamily="body"
+          fontFamily="heading"
           maxWidth="45rem"
           fontSize={{ base: 'lg', md: '2xl' }}
         >
@@ -104,9 +105,7 @@ export default function HomePage() {
 
         <Box maxWidth={{ lg: '27.5rem' }} marginTop="4">
           <Text fontSize={{ base: 'lg', md: '2xl' }}>
-            Combining my technical skills with a strategic mindset. I excel at developing scalable
-            solutions, optimizing performance, and ensuring seamless deployments for high-impact
-            products.
+            I enjoy using my technical skills to create efficient solutions and remove redundancy.
           </Text>
 
           {/* Profile links */}

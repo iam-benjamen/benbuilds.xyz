@@ -115,6 +115,7 @@ const Project = defineDocumentType(() => ({
     metadata: { type: 'json' },
     image: { type: 'string' },
     objectPosition: { type: 'string' },
+    libraries: { type: 'list', of: { type: 'string' } },
   },
   computedFields,
 }));

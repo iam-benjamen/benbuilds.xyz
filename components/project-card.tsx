@@ -1,5 +1,5 @@
 import { type Project } from 'contentlayer/generated';
-import { Box, Flex, Heading, HStack, Stack } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Stack, Wrap, Badge, WrapItem } from '@chakra-ui/react';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 import { DescriptionList } from './description-item';
@@ -42,6 +42,16 @@ export default function ProjectCard(props: ProjectCardProps) {
           <Box fontSize="lg">
             <Component />
           </Box>
+
+          {project.libraries && (
+            <Wrap>
+              {project.libraries.map((library) => (
+                <WrapItem key={library}>
+                  <Badge colorScheme="blue">{library}</Badge>
+                </WrapItem>
+              ))}
+            </Wrap>
+          )}
         </Stack>
       </Box>
 

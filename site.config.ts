@@ -24,9 +24,9 @@ const shared = {
   repo: 'https://github.com/iam-benjamen/benbuilds.xyz',
   editUrl: 'https://github.com/iam-benjamen/benbuilds.xyz/edit/main/data/',
   website: 'https://benbuilds.xyz',
-  title: 'Areo Benjamen, Software Engineer and Product Strategist',
+  title: 'Areo Benjamen, Software Developer',
   description:
-    'Software Engineer passionate about 🚀 Startups, 🖥️ Product development, 🔢 Data Structures & Algorithms,☁️ Cloud & DevOps Engineering, 🎨 User Experience, and 📈Driving Growth.',
+    'Software Developer passionate about 🚀 Startups, 🖥️ Product development, 🔢 Data Structures & Algorithms,☁️ Cloud & DevOps Engineering, 🎨 User Experience, and 📈Driving Growth.',
   image: 'https://res.cloudinary.com/djskbsz2k/image/upload/v1739137579/Areo_Benjamen_zu7okz.png',
 };
 
@@ -65,7 +65,7 @@ const siteConfig = {
         url: 'https://res.cloudinary.com/djskbsz2k/image/upload/v1739137579/Areo_Benjamen_zu7okz.png',
         width: 1200,
         height: 630,
-        alt: 'Areo Benjamen, Product-Oriented Software Engineer',
+        alt: 'Areo Benjamen, Software Developer',
       },
     ],
   },
